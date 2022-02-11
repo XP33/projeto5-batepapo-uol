@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  
+    --bg-color: #EEF9BF;
+    --card-green: #A7E9AF;
+    --title-green: #75B79E;
+  }
+  
+  html body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  
+    background-color: #fff;
+  }
+  
+  /****************** HEADER | Title ******************/
+  
+  header {
+    width: 100%;
+  
+    background-color: #75B79E;
+
+    z-index: -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 375px;
+    height: 80px;
+  }
+
+  .head_box{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 14px;
+    padding-left: 22px;
+    padding-right: 24px;
+  }
+
+  /****************** MAIN ******************/
+
+  main{
+    margin-top: 22px;
+    display: flex;
+    height: 507px;
+    width: 375px;
+    background-color: aqua;
+    color: aqua;
+  }
+
+  .message_sent{
+    margin-top: 4px;
+    color: black;
+    background-color: purple;
+    min-height: 40px;
+    min-width: 375px;
+    text-align: center;
+    padding: 8px;
+    padding-top: 11px;
+  }
+
+  /****************** FOOTER ******************/
+
+  .foot_box{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width: 100%;
+  
+    background-color: #75B79E;
+
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 17px;
+    padding-right: 27px;
+
+    width: 375px;
+    height: 80px;
+  }
+
+  /****************** MEDIA QUERIES ******************/
+  
+  @media (max-width: 614px) {
+    
+  }
