@@ -57,7 +57,7 @@ function callMessages() {
         for (let i = InicialIndex; i < messages.length; i++) {
 
 
-            if (messages[i].type === "private_message") {
+            if (messages[i].type === "private_message" && messages[i].to == nameInput) {
                 content.innerHTML += `    
                 <div class="message-container ${messages[i].type} data-identifier="message"">
                     <div class="message-structure">
@@ -67,6 +67,10 @@ function callMessages() {
                         <span class="text">${messages[i].text}</span>
                     </div>
                 </div>`
+
+            } else if (messages[i].type === "private_message" && messages[i].to != nameInput) {
+                break;
+
             } else if (messages[i].type === "message") {
                 content.innerHTML += ` 
                 <div class="message-container ${messages[i].type} data-identifier="message"">
