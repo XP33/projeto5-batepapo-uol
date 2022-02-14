@@ -1,99 +1,144 @@
 * {
-    box-sizing: border-box;
-  
-    --bg-color: #EEF9BF;
-    --card-green: #A7E9AF;
-    --title-green: #75B79E;
-  }
-  
-  html body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-  
-    background-color: #fff;
-  }
-  
-  /****************** HEADER | Title ******************/
-  
-  header {
-    width: 100%;
-  
-    background-color: #75B79E;
+	box-sizing: border-box;
+    font-family: Roboto;
 
-    z-index: -1;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body{
+    position:absolute;
+    background-color: #F3F3F3;
+}
 
-    width: 375px;
-    height: 80px;
-  }
+header{
+height:80px;
+width: 100%;
+background-color: #FFFFFF;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top:0;
+left:0;
+}
 
-  .head_box{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: 14px;
-    padding-left: 22px;
-    padding-right: 24px;
-  }
+.logo{
+width: 75px;
+height: 53px;
+margin-left: 22px;
+}
 
-  /****************** MAIN ******************/
+.people{
+Width: 42.19px;
+Height: 30.94px;
+margin-right: 22px;
+}
 
-  main{
-    margin-top: 22px;
-    display: flex;
-    height: 507px;
-    width: 375px;
-    background-color: aqua;
-    color: aqua;
-  }
+main{
+background-color: #F3F3F3;
+margin-top: 106px;
+margin-bottom: 82px;
+overflow: scroll;
+}
 
-  .message_sent{
-    margin-top: 4px;
-    color: black;
-    background-color: purple;
-    min-height: 40px;
-    min-width: 375px;
-    text-align: center;
-    padding: 8px;
-    padding-top: 11px;
-  }
+footer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 80px;  
+background: #FFFFFF;
+box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
 
-  /****************** FOOTER ******************/
+footer ion-icon{
+font-size: 26px;
+}
 
-  .foot_box{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
+button{
+background-color: #FFF;
+border: none;
+margin-left: 20px;
+margin-right: 20px;
 
-    width: 100%;
-  
-    background-color: #75B79E;
+}
 
-    z-index: -1;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+input{
+height: 80px; 
+width: 100%;
+border:none;
+margin-left:17px;
+font-weight: 400;
+font-style: italic;
+font-size: 18px;
+Line-height: 21.09px;
+padding: 10px;
+}
 
-    padding-left: 17px;
-    padding-right: 27px;
+label {
+width: 100%;
+}
 
-    width: 375px;
-    height: 80px;
-  }
+.message-container{
+width:100vw;
+min-height: 40px;
+margin-bottom: 4px;
+}
 
-  /****************** MEDIA QUERIES ******************/
-  
-  @media (max-width: 614px) {
-    
-  }
+.message-structure{
+font-size: 14px;
+margin-left: 8px;
+margin-right: 9px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.message{
+    background-color: #FFFFFF;
+}
+
+.status{
+    background-color: #DCDCDC;
+}
+
+
+.private_message{
+background-color: #FCDEDE;
+}
+
+.text{ 
+word-wrap:break-word;
+}       
+
+.time{
+color: #AAAAAA;
+}
+
+.from{
+font-weight: 700;
+margin-left:4px;
+}
+
+.action{
+font-weight: 400;
+margin-left:4px;
+}
+
+.to, .text {
+margin-left:4px;
+
+}
+
+.to{
+font-weight: 700;
+}
+
+.message-structure span{
+line-height: 20px;
+}

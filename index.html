@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -5,46 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/reset.css">
+  <link href="style/reset.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <title>projeto5-batepapo-uol</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <title>Bate-papo UOL</title>
 </head>
 
 <body>
   <header>
-    <div class="head_box">
-        <img src="/projeto5-batepapo-uol/media/logo.png"></img>
-
-        <img src="/projeto5-batepapo-uol/media/user.png"></img>
-    </div>
+    <img class="logo" src="media/logo.png" alt="logo do bate-papo">
+    <img class="people" src="media/user.png" alt="bate-papo">
   </header>
 
   <main>
-    <section class="messages">
-      <div class="message_sent">lalalala</div>
-      <div class="message_sent">lalalala</div>
-      <div class="message_sent">lalalala</div>
-      <div class="message_sent">lalalala</div>
-      <div class="message_sent">lalalala</div>
-      <div class="message_sent">lalalala</div>
-    </section>
+
+
   </main>
 
   <footer>
-    <div class="foot_box">
-      <input></input>
-      <img src="/projeto5-batepapo-uol/media/send.png"></img>
-    </div>
+    <label><input type="text" name="foot_message" placeholder="Escreva aqui..." /></label>
+    <button onclick="sendMessages()" data-identifier="send-message">
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </button>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
